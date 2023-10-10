@@ -6,29 +6,37 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-<h2 id="title">EXPENSE TRACKER</h2>
-  <h3>Available Balance</h3>
-  <p id="balance" ><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i></p>
-  <!-- <h3>Income</h3>
+  <div class="component">
+    <h2 id="title">EXPENSE TRACKER</h2>
+    <div class="row">
+      <div class="col">
+        <h3>Available Balance</h3>
+        <p id="balance"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i></p>
+      </div>
+      <div class="col">
+        <!-- <h3>Income</h3>
   <p id ="income"></p> -->
-  <h3>Expense</h3>
-  <p id ="expense"></p>
-  <h3>HISTORY</h3>
-  <ul id = "list">
-    
-  </ul>
-  <h3  >Enter The Amount</h3>
-  <input id="amount" type="text" value ="" >
-   <h3 >Text</h3>
-  <input id="text" type="text" value ="" >
-  <!-- <button id ="btn" onclick="add()">add</button> -->
-  <button id ="net">transactions</button>
-  <button id ="add" onclick ="text();net()">add</button>
-  <button id ="deduct" onclick ="text();net()">deduct</button>
+        <h3>Expense</h3>
+        <p id="expense"></p>
+      </div>
+    </div>
+    <h3>HISTORY</h3>
+    <ul id="list">
+
+    </ul>
+    <p>Enter The Amount</p>
+    <input id="amount" type="text" value="">
+    <h3>Text</h3>
+    <input id="text" type="text" value="">
+    <!-- <button id ="btn" onclick="add()">add</button> -->
+    <button id="net">transactions</button>
+    <button id="add" onclick="text();net()">add</button>
+    <button id="deduct" onclick="text();net()">deduct</button>
+  </div>
   <script src="script.js"></script>
 
   <!--
